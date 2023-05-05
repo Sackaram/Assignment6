@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Description>
+This is a Windows Forms application, that serves as a simple To-Do list manager. It allows users to add, delete, and modify tasks, which include a description, priority, and a date and time. The application displays the list of tasks and highlights the time remaining until each task's specified date and time is reached, changing the color based on how close the task is to completion. The application also provides an "About" dialog that displays the assembly description.
+
+Features include:
+
+      1 - Adding tasks: Users can input a task description, set a priority from a drop-down list, and select a date and time for the task.
+      2 - Deleting tasks: Users can delete a selected task from the list after confirming the action.
+      3 - Modifying tasks: Users can update the details of a selected task.
+      4 - Displaying time remaining: The application shows the time remaining for the selected task, changing the displayed color based on whether the task is overdue, due within 24 hours, or has more than 24 hours remaining.
+      
+      The ToDoForm class serves as the main form for the application and manages the user interface, event handling, and interactions with the TaskManager class. The TaskManager class is responsible for managing the list of tasks and providing methods for adding, removing, and retrieving tasks.
+    </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+</Project>
